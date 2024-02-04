@@ -14,20 +14,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-slate-100 flex lg:p-[2%] gap-6 ">
-          <div className="hidden lg:block">
+        <div className="bg-slate-100 flex lg:p-[2%] sm:gap-6 ">
+          <div className="hidden lg:block lg:fixed z-10">
             <Navbar />
           </div>
           <div className=" flex-1 ">
-            <div className="">
+            <div className="lg:fixed lg:w-[100%] lg:bg-slate-100 top-0">
               <TopNav />
             </div>
             <div className="flex flex-col lg:flex-row p-[2%] lg:p-0 gap-4">
-              <div className="">
+              <div className=" lg:fixed lg:left-[8vw] top-[100px]">
                 <CategoryList />
               </div>
-              <div className="flex-1">{children}</div>
-              <div className="hidden 2xl:block">
+              <div className="flex-1 2xl:pl-[30%] 2xl:pr-[18%] lg:pl-[40vw]">{children}</div>
+              <div className="hidden 2xl:block 2xl:fixed right-5 top-[100px]">
                 <Settings />
               </div>
             </div>

@@ -12,7 +12,7 @@ const CategoryList = async () => {
   const data = await res.json();
  
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open ">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         {/* Page content here */}
@@ -30,7 +30,7 @@ const CategoryList = async () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className=" max-h-[80vh] rounded-b-xl w-96">
+        <div className=" max-h-[80vh] rounded-b-xl w-96 ">
           <h2 className="main-bg rounded-t-xl text-white font-semibold md:text-lg text-center py-5">
             Categories
           </h2>

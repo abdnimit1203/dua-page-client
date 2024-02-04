@@ -10,7 +10,7 @@ import SearchBar from "./SearchBar";
 
 const TopNav = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 w-full  items-center justify-end mb-4 p-4 bg-white lg:bg-transparent">
+    <div className="grid grid-cols-2 sm:grid-cols-4 w-full  items-center justify-end mb-4 p-4 bg-white lg:bg-transparent 2xl:pl-[15%] 2xl:pr-[5%]">
       <div className="col-span-1 flex items-center gap-4 ">
       <Image src={logo} alt="logo" width={50} height={50} className="lg:hidden"></Image>
         <h1 className="text-xl lg:text-2xl font-bold  ">Dua Page</h1>
