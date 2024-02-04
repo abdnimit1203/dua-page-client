@@ -1,11 +1,12 @@
 import Link from "next/link";
+import baseUrl from "@/app/utils/baseurl";
 
 
 const Subcategory = async (category_id) => {
   console.log(category_id.category_id);
 
   const res = await fetch(
-    `http://localhost:3003/api/sub_category?cat_id=${category_id.category_id}`,
+    `${baseUrl}/sub_category?cat_id=${category_id.category_id}`,
     { cache: "force-cache" }
   );
   const subData = await res.json();

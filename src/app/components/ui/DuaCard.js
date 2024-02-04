@@ -10,7 +10,7 @@ import { PiWarningOctagonLight } from "react-icons/pi";
 const DuaCard = ({ dua }) => {
   console.log(dua);
   return (
-    <div className="flex flex-col gap-4 w-full bg-white p-4 lg:px-8 rounded-xl mb-6">
+    <div id="#" className="flex flex-col gap-4 w-full bg-white p-4 lg:px-8 rounded-xl mb-6">
       <div className="flex gap-2  items-center main-clr font-semibold">
         <Image
           src={AllahLogo}

@@ -1,7 +1,9 @@
 import DuaCard from "./components/ui/DuaCard";
+import SubSection from "./components/ui/SubSection";
+import baseUrl from "@/app/utils/baseurl";
 
 const HomePage = async () => {
-  const res = await fetch("http://localhost:3003/api/dua?cat_id=1", {
+  const res = await fetch(`${baseUrl}/sub_category?cat_id=1`, {
     cache: "force-cache",
   });
   const singleDua = await res.json();
@@ -9,7 +11,7 @@ const HomePage = async () => {
   return (
     <div className="">
       {singleDua.map((dua, idx) => (
-        <DuaCard key={idx} dua={dua} />
+        <SubSection key={idx} subDua={dua} />
       ))}
     </div>
   );

@@ -4,9 +4,10 @@ import icon from "@/app/assets/hug.png";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
+import baseUrl from "@/app/utils/baseurl";
 
 const CategoryList = async () => {
-  const res = await fetch("http://localhost:3003/api/category", {
+  const res = await fetch(`${baseUrl}/category`, {
     cache: "force-cache",
   });
   const data = await res.json();
@@ -30,7 +31,7 @@ const CategoryList = async () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className=" max-h-[80vh] rounded-b-xl w-96 ">
+        <div className=" max-h-[80vh] rounded-b-xl lg:w-80 xl:w-96 ">
           <h2 className="main-bg rounded-t-xl text-white font-semibold md:text-lg text-center py-5">
             Categories
           </h2>
